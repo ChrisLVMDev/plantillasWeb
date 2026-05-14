@@ -12,7 +12,26 @@ Foto de <a href="https://unsplash.com/es/@nathanielw?utm_source=unsplash&utm_med
 -----------------------------------------------------------------------------------------------------------------------------------------
 
 
+<https://www.fotocasa.es/es/comprar/vivienda/mogan/jardin/187267092/d > img4a....f venta vacacional
 
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+<https://www.plumguide.com/homes/76661/ode-to-the-sun#gallery> img5 a …..f alquiler vacacional 
+
+----------------------------------------------------------------------------------------------------------------------------------------
+<https://www.fotocasa.es/es/alquiler/vivienda/malaga-capital/amueblado/185436202/d?isZoomGalleryOpen=true&from=list&multimedia=image#image-9> img6a...….f alquiler urbanismo 
+
+--------------------------------------------------------------------------------------------------------------------------------------
+
+<> img7a....venta urbanismo 
+---------------------------------------------------------------------------------------------------------------------------------------
+      
+<https://www.fotocasa.es/es/comprar/vivienda/madrid-capital/aire-acondicionado-calefaccion-parking-jardin-terraza-trastero-piscina/188771732/d?isZoomGalleryOpen=true&from=list&multimedia=image#image-0>img8a...f alquiler lujoso 
+
+
+
+      
+      
       
       
       

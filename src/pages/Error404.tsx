@@ -1,5 +1,4 @@
 
-
 interface Error404Props {
     backgroundImage?: string;
     homeLink?: string;
@@ -39,7 +38,7 @@ export const Error404 = ({
 
                 <nav>
                     <a
-                        href="./Welcome"
+                        href={`/${homeLink}`}
                         className="inline-flex items-center rounded-lg bg-indigo-600 px-8 py-3.5 text-center text-sm font-bold uppercase tracking-widest text-white transition-all hover:bg-indigo-700 hover:shadow-lg focus:outline-none focus:ring-4 focus:ring-indigo-500/50 active:scale-95"
                     >
                         Volver al inicio

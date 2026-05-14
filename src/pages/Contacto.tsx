@@ -28,10 +28,10 @@ export const Contacto = () => {
   const onSubmit: SubmitHandler<FormInputs> = async (data) => {
     try {
       // Opción 1: Mailto (abre cliente de correo del usuario)
-      const mailtoLink = `mailto:info@robooticseducation.com?subject=Contacto desde web - ${data.name}&body=${encodeURIComponent(
+      const mailtoLink = `mailto:ejemplo@inmores.com?subject=Contacto desde web - ${data.name}&body=${encodeURIComponent(
         `Nombre: ${data.name}\nEmail: ${data.email}\n\nMensaje:\n${data.message}`
       )}`;
-      // eslint-disable-next-line react-hooks/immutability
+      // ejecutable de correo electronico, no tocar
       window.location.href = mailtoLink;
 
       // Opción 2: Si tienes backend/API, descomenta esto:
@@ -188,10 +188,10 @@ export const Contacto = () => {
                 Email
               </h3>
               <a
-                href="mailto:contacto@tuempresa.com"
+                href="mailto:ejemplo@inmores.com"
                 className="text-slate-600 hover:text-slate-900 transition"
               >
-                contacto@tuempresa.com
+                ejemplo@inmores.com
               </a>
             </div>
 
