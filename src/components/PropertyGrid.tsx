@@ -50,7 +50,7 @@ export const PropertyGrid = ({
           <h2 className='text-4xl md:text-5xl font-bold text-[#FF7D29] mb-4'>
             {activeCategory ? `Propiedades para ${activeCategory}` : 'Todas nuestras propiedades'}
           </h2>
-          <div className='h-1 w-24 bg-gradient-to-r from-[#FFBF78] to-[#FF7D29] mx-auto rounded-full'></div>
+          <div className='h-1 w-24 bg-linear-to-r from-[#FFBF78] to-[#FF7D29] mx-auto rounded-full'></div>
         </div>
 
         {/* Grid */}

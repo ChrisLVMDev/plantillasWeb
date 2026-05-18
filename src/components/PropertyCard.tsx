@@ -78,7 +78,7 @@ export const PropertyCard = ({ property }: PropertyCardProps) => {
         </div>
 
         {/* Botón */}
-        <button className='w-full bg-gradient-to-r from-[#FF7D29] to-[#FFBF78] hover:from-[#FFBF78] hover:to-[#FFEEA9] text-white font-bold py-2 px-4 rounded transition'>
+        <button className='w-full bg-linear-to-r from-[#FF7D29] to-[#FFBF78] hover:from-[#FFBF78] hover:to-[#FFEEA9] text-white font-bold py-2 px-4 rounded transition'>
           Ver detalles
         </button>
       </div>

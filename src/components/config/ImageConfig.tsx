@@ -38,6 +38,7 @@ export const propertyImages = {
 
 };
 
+
 // Exportar todas las imágenes individuales si las necesitas
 export {
   img1, img2, img3,

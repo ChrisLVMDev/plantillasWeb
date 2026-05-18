@@ -1,3 +1,4 @@
+import {img3} from '../components/config/ImageConfig';
 
 interface Error404Props {
     backgroundImage?: string;
@@ -5,7 +6,7 @@ interface Error404Props {
 }
 
 export const Error404 = ({
-    backgroundImage = "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=2070&auto=format&fit=crop",
+    backgroundImage = img3,
     homeLink = "Welcome"
 }: Error404Props) => {
     return (
@@ -39,7 +40,7 @@ export const Error404 = ({
                 <nav>
                     <a
                         href={`/${homeLink}`}
-                        className="inline-flex items-center rounded-lg bg-indigo-600 px-8 py-3.5 text-center text-sm font-bold uppercase tracking-widest text-white transition-all hover:bg-indigo-700 hover:shadow-lg focus:outline-none focus:ring-4 focus:ring-indigo-500/50 active:scale-95"
+                        className="inline-flex items-center rounded-lg bg-orange-600 px-8 py-3.5 text-center text-sm font-bold uppercase tracking-widest text-white transition-all hover:bg-indigo-700 hover:shadow-lg focus:outline-none focus:ring-4 focus:ring-indigo-500/50 active:scale-95"
                     >
                         Volver al inicio
                     </a>
