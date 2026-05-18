@@ -1,8 +1,13 @@
 import { useState } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
+interface CarouselImage {
+  src: string;
+  alt?: string;
+}
+
 interface ImageCarouselProps {
-    images: string[];
+    images: (string | CarouselImage)[];
     title: string;
 }
 
@@ -39,8 +44,8 @@ export const ImageCarousel = ({ images, title }: ImageCarouselProps) => {
             {/* Imagen principal */}
             <div className='relative h-48 overflow-hidden bg-gradient-to-br from-[#FEFFD2] to-[#FFBF78] rounded-lg'>
                 <img
-                    src={images[currentImageIndex]}
-                    alt={`${title} - Imagen ${currentImageIndex + 1}`}
+                    src={typeof images[currentImageIndex] === 'string' ? images[currentImageIndex] as string : (images[currentImageIndex] as CarouselImage).src}
+                    alt={typeof images[currentImageIndex] === 'string' ? `${title} - Imagen ${currentImageIndex + 1}` : ((images[currentImageIndex] as CarouselImage).alt || `${title} - Imagen ${currentImageIndex + 1}`)}
                     className='w-full h-full object-cover transition-opacity duration-300'
                     onError={(e) => {
                         // Si la imagen no carga, ocultarla y mostrar mensaje

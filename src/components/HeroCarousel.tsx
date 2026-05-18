@@ -1,8 +1,13 @@
 import { useState, useEffect } from 'react';
 import { heroImages } from './config/ImageConfig';
  
+interface HeroImage {
+  src: string;
+  alt?: string;
+}
+
 interface HeroCarouselProps {
-  images?: string[] | any[];  // ✅ Acepta tanto strings como imports de imágenes
+  images?: (string | HeroImage)[];
   title?: string;
   subtitle?: string;
 }
@@ -31,7 +36,7 @@ export const HeroCarousel = ({
     }, 5000); // Cambiar imagen cada 5 segundos
  
     return () => clearInterval(interval);
-  }, [images.length]);
+  }, [images]);
  
   const goToImage = (index: number) => {
     setCurrentImageIndex(index);
@@ -72,10 +77,10 @@ export const HeroCarousel = ({
             } bg-green-500`}
           >
             <img
-              src={image}
-              alt={`Slide ${index + 1}`}
+              src={typeof image === 'string' ? image : image.src}
+              alt={typeof image === 'string' ? `Slide ${index + 1}` : (image.alt || `Slide ${index + 1}`)}
               className='w-full h-full object-cover '
-              onError={(e) => {
+              onError={() => {
                 console.error(`Error cargando imagen ${index}:`, image);
               }}
             />

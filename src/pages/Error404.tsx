@@ -1,4 +1,4 @@
-import {img3} from '../components/config/ImageConfig';
+import { img3 } from '../components/config/ImageConfig';
 
 interface Error404Props {
     backgroundImage?: string;
@@ -6,8 +6,8 @@ interface Error404Props {
 }
 
 export const Error404 = ({
-    backgroundImage = img3,
-    homeLink = "Welcome"
+    backgroundImage = typeof img3 === 'string' ? img3 : img3.src,
+    homeLink = "/"
 }: Error404Props) => {
     return (
         <main className="relative flex min-h-screen items-center justify-center overflow-hidden bg-gray-900">
@@ -39,7 +39,7 @@ export const Error404 = ({
 
                 <nav>
                     <a
-                        href={`/${homeLink}`}
+                        href={homeLink}
                         className="inline-flex items-center rounded-lg bg-orange-600 px-8 py-3.5 text-center text-sm font-bold uppercase tracking-widest text-white transition-all hover:bg-indigo-700 hover:shadow-lg focus:outline-none focus:ring-4 focus:ring-indigo-500/50 active:scale-95"
                     >
                         Volver al inicio

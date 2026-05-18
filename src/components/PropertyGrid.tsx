@@ -1,6 +1,11 @@
 import { useMemo } from 'react';
 import { PropertyCard } from './PropertyCard';
 
+interface PropertyImage {
+  src: string;
+  alt?: string;
+}
+
 interface Property {
   id: number;
   title: string;
@@ -8,8 +13,8 @@ interface Property {
   price: string;
   type: 'comprar' | 'alquilar';
   subtype: 'lujo' | 'costa' | 'urbano' | 'rustico';
-  images?: string[];        // Opcional
-  image?: string;           // Opcional
+  images?: (string | PropertyImage)[];
+  image?: string | PropertyImage;
   rooms: number;
   bathrooms: number;
   area: string;
