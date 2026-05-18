@@ -43,9 +43,14 @@ export const ImageCarousel = ({ images, title }: ImageCarouselProps) => {
                     alt={`${title} - Imagen ${currentImageIndex + 1}`}
                     className='w-full h-full object-cover transition-opacity duration-300'
                     onError={(e) => {
-                        (e.target as HTMLImageElement).src = 'https://via.placeholder.com/400x300?text=Imagen+no+disponible';
+                        // Si la imagen no carga, ocultarla y mostrar mensaje
+                        (e.target as HTMLImageElement).style.display = 'none';
                     }}
                 />
+                {/* Fallback si la imagen no carga */}
+                <div className='absolute inset-0 flex items-center justify-center text-gray-400 text-sm'>
+                    Imagen no disponible
+                </div>
             </div>
 
             {/* Botones de navegación lateral (solo visible en hover en desktop) */}
