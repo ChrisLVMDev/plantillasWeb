@@ -31,6 +31,9 @@ import img8b from '../../assets/img/img8b.webp';
 import img8c from '../../assets/img/img8c.webp';
 import img8d from '../../assets/img/img8d.webp';
 import img8e from '../../assets/img/img8e.webp';
+import PrimerAvatar from '../../assets/img/PrimerAvatar.webp';
+import SegundoAvatar from '../../assets/img/SegundoAvatar.webp';
+import TercerAvatar from '../../assets/img/TercerAvatar.webp';
 
 
 // Imágenes del hero carousel
@@ -104,5 +107,6 @@ export {
   img5a, img5b, img5c, img5d, img5e, img5f,
   img6a, img6b, img6c, img6d, img6e, img6f,
   img7a, img7b, img7c, img7d, img7e, img7f,
-  img8a, img8b, img8c, img8d, img8e,
+  img8a, img8b, img8c, img8d, img8e, PrimerAvatar,
+  SegundoAvatar, TercerAvatar
 };

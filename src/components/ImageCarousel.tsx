@@ -2,8 +2,8 @@ import { useState } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 interface CarouselImage {
-  src: string;
-  alt?: string;
+    src: string;
+    alt?: string;
 }
 
 interface ImageCarouselProps {
@@ -52,10 +52,6 @@ export const ImageCarousel = ({ images, title }: ImageCarouselProps) => {
                         (e.target as HTMLImageElement).style.display = 'none';
                     }}
                 />
-                {/* Fallback si la imagen no carga */}
-                <div className='absolute inset-0 flex items-center justify-center text-gray-400 text-sm'>
-                    Imagen no disponible
-                </div>
             </div>
 
             {/* Botones de navegación lateral (solo visible en hover en desktop) */}
@@ -87,8 +83,8 @@ export const ImageCarousel = ({ images, title }: ImageCarouselProps) => {
                             key={index}
                             onClick={() => goToImage(index)}
                             className={`w-2 h-2 rounded-full transition-all duration-300 ${index === currentImageIndex
-                                    ? 'bg-white w-6'
-                                    : 'bg-white/50 hover:bg-white/75'
+                                ? 'bg-white w-6'
+                                : 'bg-white/50 hover:bg-white/75'
                                 }`}
                             aria-label={`Ir a imagen ${index + 1}`}
                         />

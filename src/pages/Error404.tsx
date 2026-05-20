@@ -6,7 +6,7 @@ interface Error404Props {
 }
 
 export const Error404 = ({
-    backgroundImage = typeof img3 === 'string' ? img3 : img3.src,
+    backgroundImage = typeof img3 === 'string' ? img3 : img3,
     homeLink = "/"
 }: Error404Props) => {
     return (
